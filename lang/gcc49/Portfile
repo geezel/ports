@@ -105,7 +105,8 @@ configure.env-append \
                     RANLIB_FOR_TARGET=${prefix}/bin/ranlib \
                     STRIP_FOR_TARGET=${prefix}/bin/strip \
                     OTOOL=${prefix}/bin/otool \
-                    OTOOL64=${prefix}/bin/otool
+                    OTOOL64=${prefix}/bin/otool \
+                    DFP_ENABLE=1
 
 pre-configure {
     configure.args-append --with-pkgversion="MacPorts ${name} ${version}_${revision}${portvariants}"
